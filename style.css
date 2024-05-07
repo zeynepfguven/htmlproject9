@@ -1,0 +1,158 @@
+:root{
+   
+    
+    --bodycolor:#e9ecef;
+    --bgcolor:#adb5bd;
+    --bordercolor:#adb5bd;
+    --fontcolor:#2E3440;
+    
+}
+
+.dark-theme{
+    --bodycolor:#4C566A;
+    --bgcolor:#2E3440;
+    --bordercolor:#434C5E;
+    --fontcolor:#e9ecef;
+
+}
+
+header nav i{
+    cursor: pointer;
+    color: var(--fontcolor);
+    transition: all 0.5s ease;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(--bodycolor);
+    color:var(--fontcolor);
+    overflow: hidden;
+
+}
+
+.container{
+
+    position: relative;
+
+}
+
+header{
+    background-color: var(--bgcolor);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.5s ease;
+
+}
+
+header nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid var(--bordercolor);
+   padding:1rem;    
+   transition: all 0.5s ease;
+
+}
+
+header nav h2{
+    letter-spacing: 5px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main article{
+    text-align: center;
+    padding: 1rem;
+}
+.img-container {
+    width: 250px; 
+    height: 250px; 
+    overflow: hidden;
+    border-radius: 50%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex; 
+    justify-content: center;
+}
+
+.profile-image {
+    width: 100%; 
+    height: auto;
+}
+
+main article h3{
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+main article p{
+    
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+}
+
+main article p a{
+    color: var(--fontcolor);
+    text-decoration: none;
+    border-bottom: solid 1px var(--bordercolor);
+}
+
+main article p a:hover{
+    color: var(--bordercolor);
+}
+
+main article ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    list-style-type: none;
+}
+
+main article ul li a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: var(--fontcolor);
+    transition: color 0.5s ease;
+
+}
+
+main article ul li:hover a{
+    border-color: var(--bordercolor);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: var(--bgcolor);
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+
+}
+footer nav{
+    padding: 0.5rem;
+    border-top: 1px solid var(--bordercolor0);
+    transition: all 0.5s ease;
+
+
+}
+
+footer nav small{
+    font-size: 0.75rem;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+
+} 
